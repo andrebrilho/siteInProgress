@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Hind);
+
+/*--- Body Font --*/
+
+@import url(https://fonts.googleapis.com/css?family=Nobile);
+
+/*--- Heading Font --*/
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Hind', sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+h1 {
+    font-family: 'Nobile' sans-serif;
+    text-align: center;
+    font-size: 175%;
+    color: #4A4444;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 3% 0;
+}
+
+h3 {
+    font-family: 'Nobile' sans-serif;
+    text-align: center;
+    color: #4A4444;
+    text-transform: uppercase;
+    letter-spacing: 1%;
+}
+
+h4 {
+    font-family: 'Nobile' sans-serif;
+    text-align: center;
+    color: #4A4444;
+    font-size: 100%;
+    padding-top: 2%;
+    text-transform: uppercase;
+    letter-spacing: 1%;
+}
+
+p {
+    padding: 2%;
+    color: #4A4444;
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*----Start Image Slider Style*/
+
+.slider {
+    width: 100%;
+}
+
+.slider1 img {
+    min-width: 100%;
+    margin: 0 auto;
+}
+
+.slider .bx-wrapper .bx-controls-direction a {
+    outline: 0 none;
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    height: 71px;
+    width: 40px;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.slider .bx-wrapper:hover .bx-controls-direction a {
+    z-index: 5;
+}
+
+
+/*----End Image Slider Style*/
+
+
+/* .slider .bx-wrapper .bx-prev {
+    background: #fff url("img/arrow.png") no-repeat 25px 25px;
+    left: 0px;
+    opacity: 0.1;
+}
+
+.slider .bx-wrapper .bx-prev:hover {
+    opacity: 0.6;
+}
+
+.slider .bx-wrapper .bx-next {
+    background: #000 url("img/arrow.png") no-repeat 25px 25px;
+    right: 0px;
+    opacity: 0.1;
+}
+
+.slider .bx-wrapper .bx-next:hover {
+    opacity: 0.6;
+} */
+
+#banner-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.one-half {
+    width: 44%;
+    float: left;
+    margin: 2% 0 3% 4%;
+    text-align: center;
+}
+
+.three-half {
+    width: 28%;
+    float: left;
+    margin: 2% 0 3% 4%;
+    text-align: center;
+}
+
+.left-col {
+    width: 60%;
+    float: left;
+    margin: 4% 0 4% 4%;
+}
+
+.sidebar {
+    width: 26%;
+    float: right;
+    margin: 4% 4%;
+}
+
+.sidebar img {
+    opacity: 0.9;
+}
+
+
+/*----Start Paralax BGK*/
+
+.parallax-1 {
+    background: url("img/parallax1.png") repeat fixed 100%;
+    text-align: center;
+}
+
+.paralax-iner {
+    padding-top: 30px;
+    padding-bottom: 420px;
+}
+
+.paralax-iner h3,
+.paralax-iner p,
+.paralax-iner3 h3,
+.paralax-iner3 p {
+    color: #f1f1f1;
+    letter-spacing: 1px;
+}
+
+.parallax-2 {
+    background: url("img/parallax-2.png") repeat fixed 100%;
+    text-align: center;
+}
+
+.paralax-iner2 {
+    padding-top: 0px;
+    padding-bottom: 340px;
+}
+
+.parallax-3 {
+    background: url("img/bgkFooter.png") repeat fixed 100%;
+    text-align: center;
+}
+
+.paralax-iner3 {
+    padding-top: 0px;
+    padding-bottom: 350px;
+}
+
+
+/*----End Paralax BGK*/
