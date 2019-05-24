@@ -1,11 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Hind);
-
-/*--- Body Font --*/
-
-@import url(https://fonts.googleapis.com/css?family=Nobile);
-
-/*--- Heading Font --*/
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Thasadith&display=swap');
 * {
     margin: 0;
     border: 0;
@@ -13,10 +6,11 @@
 }
 
 body {
-    background-color: #fff;
-    font-family: 'Hind', sans-serif;
+    background-color: #fafafa;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 18px;
     position: relative;
+    overflow-x: hidden;
 }
 
 .clearfix:after {
@@ -28,7 +22,7 @@ body {
 }
 
 h1 {
-    font-family: 'Nobile' sans-serif;
+    font-family: 'Thasadith', sans-serif;
     text-align: center;
     font-size: 175%;
     color: #4A4444;
@@ -38,7 +32,7 @@ h1 {
 }
 
 h3 {
-    font-family: 'Nobile' sans-serif;
+    font-family: 'Thasadith', sans-serif;
     text-align: center;
     color: #4A4444;
     text-transform: uppercase;
@@ -46,7 +40,7 @@ h3 {
 }
 
 h4 {
-    font-family: 'Nobile' sans-serif;
+    font-family: 'Thasadith', sans-serif;
     text-align: center;
     color: #4A4444;
     font-size: 100%;
@@ -80,12 +74,11 @@ img {
     left: 28%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255, 0.0);
-    color: #f1f1f1;
+    background-color: rgb(255, 255, 255, 0.1);
+    color: #fafafa;
     font-size: 250%;
     margin: 160px 0px 0;
     padding: 12px 24px;
-    cursor: pointer;
     border-radius: 5px;
 }
 
@@ -112,11 +105,10 @@ img {
 
 /*----End Image Slider Style*/
 
-
-/* .slider .bx-wrapper .bx-prev {
-    background: #fff url("img/arrow.png") no-repeat 25px 25px;
+.slider .bx-wrapper .bx-prev {
+    background: #000 url("img/left-arrow-white.png") no-repeat 8px 13px;
     left: 0px;
-    opacity: 0.1;
+    opacity: 0.3;
 }
 
 .slider .bx-wrapper .bx-prev:hover {
@@ -124,16 +116,21 @@ img {
 }
 
 .slider .bx-wrapper .bx-next {
-    background: #000 url("img/arrow.png") no-repeat 25px 25px;
+    background: #000 url("img/right-arrow-white.png") no-repeat 8px 13px;
     right: 0px;
-    opacity: 0.1;
+    opacity: 0.3;
 }
 
 .slider .bx-wrapper .bx-next:hover {
     opacity: 0.6;
-} */
+}
 
 #banner-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#centralizadora {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -148,6 +145,12 @@ img {
     float: left;
     margin: 6% 0 3% 4%;
     text-align: center;
+}
+
+.one-half p {
+    margin: 6% 6% 6% 4%;
+    padding: 2%;
+    font-size: 19px;
 }
 
 .three-half {
@@ -216,7 +219,7 @@ img {
 }
 
 .sidebarFooter p {
-    color: #f1f1f1;
+    color: #fafafa;
     text-align: center;
     font-size: 18px;
     padding-bottom: 0%;
@@ -283,18 +286,24 @@ img {
 .saibaMais .btn {
     border: 2px solid rgb(42, 51, 56);
     color: rgb(42, 51, 56);
+    background-color: #fafafa;
     font-size: 120%;
     padding: 25px 45px;
     margin-top: 3%;
     margin-bottom: 3%;
     cursor: pointer;
     border-radius: 5px;
+    transition: 1.3s;
+    opacity: 0;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .saibaMais .btn:hover {
     transition: 0.6s;
     border: 2px solid rgb(42, 51, 56);
-    color: rgb(255, 255, 255);
+    color: #fafafa;
+    background-color: rgb(42, 51, 56);
     font-size: 120%;
     background-color: rgb(42, 51, 56);
     padding: 25px 45px;
@@ -308,7 +317,7 @@ img {
 .paralax-iner p,
 .paralax-iner3 h3,
 .paralax-iner3 p {
-    color: #f1f1f1;
+    color: #fafafa;
     letter-spacing: 1px;
 }
 
@@ -348,3 +357,59 @@ img {
 
 
 /*----End Paralax BGK*/
+
+
+/*----START MEDIA QUERY AND RESPONSIVE*/
+
+@media screen and (max-width: 768px) {
+    .slider .bx-wrapper .bx-controls {
+        display: none;
+    }
+    .paralax-iner {
+        display: none;
+    }
+    .paralax-iner2 {
+        display: none;
+    }
+    .three-half,
+    .three-halfFooter,
+    .three-halfFooter2 {
+        width: 100%;
+        margin: 4% 0;
+    }
+    .one-half {
+        display: none;
+    }
+    h1 {
+        font-size: 140%;
+    }
+    .btn {
+        display: none;
+    }
+    .left-col {
+        width: 100%;
+        margin: 0 0 3% 0;
+    }
+    .sidebar {
+        width: 100%;
+        margin: 0;
+    }
+    img {
+        width: 100%;
+    }
+    h3 {
+        padding-top: 3%;
+    }
+    .paralax-iner3 img {
+        width: 50%;
+        height: 35%;
+    }
+    .redeSocial img {
+        width: 8%;
+        height: 8%;
+    }
+    .slide-wrap img {
+        width: 150%;
+        height: auto;
+    }
+}
